@@ -1,0 +1,46 @@
+body {
+  background-color: #ddd;
+}
+nav {
+  padding-top: 30px;
+}
+nav ul li p {
+  padding-top: 100px;
+  font-family: arial;
+  font-size: 12px;
+  text-decoration: none;
+  color: #cc181e;
+  padding-bottom: 100px;
+}
+
+header {
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+  z-index: 1000;
+  border-bottom: 1px solid #e6e6e6;
+  position: fixed;
+  top: 0px;
+}
+
+header img{
+  width: 16px;
+  padding: 17px;
+  margin-left: 20px;
+  opacity: 0.4;
+}
+
+
+header img:hover {
+  opacity: 0.6;
+}
+
+nav {
+  width: 240px;
+  height: 100vh;
+  background-color: #fff;
+}
+
+.info-box{
+  padding: 300px;
+}

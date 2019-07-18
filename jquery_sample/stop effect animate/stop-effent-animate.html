@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel='stylesheet' href='style-animate.css'>
+    <title></title>
+    <script src="../jquery-3.4.1.min.js">
+    </script>
+    <script>
+      $(document).ready(function() {
+
+        $('.content-box').click(function(){
+          $('.content-box').animate({
+            width: '500px',
+            height: '400px'
+          }, 3000).animate({
+            fontSize: '30px'
+          }, 3000);
+          });
+          $('button').click(function(){
+            // stop current animate
+            // $('.content-box').stop();
+            // stop all animate
+            // $('.content-box').stop(true);
+            // stop and finish animate
+            $('.content-box').stop(true, true);
+          })
+      });
+
+    </script>
+
+  </head>
+  <body>
+
+    <button type="button" name="button">Click me to stop animating</button>
+    <div class="content-box">
+        <p class="content-text">Click me to Start animating</p>
+    </div>
+
+
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel='stylesheet' href='style.css'>
+    <title></title>
+    <script src="../jquery-3.4.1.min.js">
+    </script>
+  </head>
+  <body>
+
+    <header>
+      <img src="m.jpg" id="menu-toggle">
+    </header>
+
+    <div style="float: left;">
+      <nav id="side-nav">
+        <ul>
+          <li><a class="active" href="#">Home</a></li>
+          <li><a href="#">My channel</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <ul>
+          <li><a>Library</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+    </div>
+
+
+
+    <div class="info-box">
+      <div class="info-title">
+        <p>info title</p>
+      </div>
+      <div class="info-content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat.
+      </div>
+    </div>
+
+    <script>
+      $(document).ready(function() {
+
+        //
+        $('.info-title').click(function(){
+          $('.info-content').slideToggle("fast");
+        });
+
+        $("#menu-toggle").click(function(){
+            $('#side-nav').slideToggle(1000, function(){
+              // alert('hiii');
+            });
+        });
+        //
+
+      });
+
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="../jquery-3.4.1.min.js">
+    </script>
+
+  </head>
+  <body>
+
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+
+      <p id="p1">Hover me</p>
+      <p id="p2">click me</p>
+      <p id="p3">double click</p>
+      <p id="p4">Leave me alone</p>
+      <p>press [enter]</p>
+
+      <script>
+      // function inside to a query that actually allow for us to
+      // load code when everything else has been loaded
+        $(document).ready(function(){
+
+          $('#p1').hover(function(){
+            $(this).hide();
+          });
+
+          $('#p2').click(function(){
+            $(this).hide();
+          });
+
+          $("#p3").dblclick(function() {
+            $(this).hide();
+
+          });
+
+          $('#p4').mouseout(function(){
+            $(this).hide();
+          });
+
+          var menuTrigger = false;
+          $(document).keypress(function(e) {
+            if(e.which == 13){
+              if (menuTrigger === false){
+                $('nav').fadeIn(500);
+                menuTrigger = true;
+              }else if (menuTrigger == true) {
+                $('nav').fadeOut(500);
+                menuTrigger = false;
+              }
+            }
+            });
+
+        });
+
+      </script>
+  </body>
+</html>

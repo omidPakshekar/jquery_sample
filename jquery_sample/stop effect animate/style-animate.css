@@ -1,0 +1,28 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.content-box {
+  width: 240px;
+  height: 160;
+  border-radius: 6px;
+  background-color: blue;
+  padding: 20px;
+}
+.content-before {
+  font-size: 22px;
+  font-family: arial;
+  color: #fff;
+  text-align: center;
+  line-height: 60px;
+}
+
+.content-after {
+  display: none;
+  font-size: 14px;
+  font-family: arial;
+  color: #fff;
+  text-align: left;
+  line-height: 16px;
+  opacity: 0;
+}

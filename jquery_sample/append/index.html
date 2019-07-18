@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="../jquery-3.4.1.min.js"></script>
+  </head>
+  <body>
+
+  <div id="container">
+    <p id="p-first">The first paragraph</p>
+    <p id="p-second">the seconde paragraph</p>
+    <p id="p-third">the third paragraph</p>
+  </div>
+
+  <script>
+      // $(document).ready(function(){
+      //   // prepend = inside container before p-first
+      //   // append = the last elemnt
+      //   // before = is used before container
+      //   // after = is used after container
+      //   $('#container').prepend('this is four paragraph');
+      //   // we can render html content
+      //   $('#container').prepend('<p>this is five paragraph</p>');
+      //   $('#container').append('<p>this is five paragraph</p>',
+      //               '<p>this is five paragraph</p>',
+      //               '<p>this is five paragraph</p>','<p>this is five paragraph</p>');
+      //
+      // });
+
+      // inside java script we create element first then appended inside elemnt
+      $(document).ready(function(){
+        var createEle = document.createElement("p");
+        createEle.innerHTML = "a new new pragraph";
+        $('#container').append(createEle, '<p>a new pragraph</p>');
+      });
+  </script>
+
+  </body>
+</html>

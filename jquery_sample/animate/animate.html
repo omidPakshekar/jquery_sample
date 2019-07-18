@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel='stylesheet' href='style-animate.css'>
+    <title></title>
+    <script src="../jquery-3.4.1.min.js">
+    </script>
+    <script>
+      $(document).ready(function() {
+
+        $('.content-box').click(function(){
+          // inside animate we can use three args 1-acutuall amnimate 2-speed 3-callback
+            // first parameter is object and have multiple styles
+            // and we can change the style except background-color and
+            // jquery dosn't allow to dispaly none inside the animate code
+            // but we can do this with jquery option
+          $('.content-box').animate({
+            width: '500px',
+            // if we don't know the width stylesheet
+            height: '+=100px'
+          }, 1000);
+            $('.content-after').show().animate({opacity: '1'}, 3000);
+          });
+
+      });
+
+    </script>
+
+  </head>
+  <body>
+
+    <div class="content-box">
+        <p class="content-before">click me to see more</p>
+        <p class="content-after">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+    </div>
+
+
+  </body>
+</html>

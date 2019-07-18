@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="../jquery-3.4.1.min.js"></script>
+  </head>
+  <body>
+
+    <script >
+      $(document).ready(function(){
+
+        $('#btn1').click(function(){
+          // alert($('#text1').text());
+          $('#text1').text('this is ne text');
+        });
+
+        $('#btn2').click(function(){
+          // alert($('#text2').html());
+          $('#text2').html('<i>this is ne text</i>');
+        });
+
+        $('#btn3').click(function(){
+          // alert($('#test3').val());
+          $('#text3').val('this is ne text');
+        });
+
+      });
+    </script>
+
+
+    <p id="text1">Lorem ipsum dolor sit amet, con</p>
+    <p id="text2"><b>in fute , lecut us susfnsco falsicss</b></p>
+    <input type="text"  id="text3">
+
+    <button type="button" id="btn1">Text</button>
+    <button type="button" id="btn2">Html</button>
+    <button type="button" id="btn3">Input</button>
+
+  </body>
+</html>

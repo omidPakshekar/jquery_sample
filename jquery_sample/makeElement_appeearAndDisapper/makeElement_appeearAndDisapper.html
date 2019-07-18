@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel='stylesheet' href='style.css'>
+    <title></title>
+    <script src="jquery-3.4.1.min.js">
+    </script>
+  </head>
+  <body>
+
+    <header>
+      <img src="m.jpg" id="menu-toggle">
+    </header>
+
+    <nav id="side-nav">
+      <ul>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#">My channel</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul>
+        <li><a>Library</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <script>
+      $(document).ready(function() {
+
+        // $("#menu-toggle").click(function(){
+        //   // we create function to callback
+        //   // callback is basically when it dose something load effect
+        //     $('#side-nav').toggle(1000, function(){
+        //       alert('hi');
+        //     });
+        // });
+        // when we want to change opacity inide the browsers
+
+        // $("#menu-toggle").click(function(){
+        //     $('#side-nav').fadeToggle(1000, function(){
+        //       alert('hi');
+        //     });
+        // });
+        $("#menu-toggle").click(function(){
+          // we decide in the parameters whether opacity needs to stop changing too
+            $('#side-nav').fadeTo(1000, 0.5, function(){
+              alert('hi');
+            });
+        });
+
+
+
+      });
+
+    </script>
+
+  </body>
+</html>
